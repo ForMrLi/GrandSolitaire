@@ -19,4 +19,9 @@ cc.Class({
     update: function (dt) {
 
     },
+
+    // called every frame
+    update1: function (dt) {
+
+    },
 });
