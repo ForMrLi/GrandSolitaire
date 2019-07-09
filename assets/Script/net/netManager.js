@@ -108,7 +108,8 @@ let netManager = {
     //   }
     // });
   },
-
+  
+  //连接成功后登陆
   login: function(cb) {
     pomelo.request("connector.entryHandler.entry", {
       token: this.token,
