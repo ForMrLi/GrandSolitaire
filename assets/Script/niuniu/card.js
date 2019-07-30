@@ -21,13 +21,13 @@ cc.Class({
         this.back.enabled = flag;
     },
 
-    setSuitEnabled(flag){
-        this.suitBig.enabled = flag;
-        this.suitSmall.enabled = flag;
+    setSuitVisible(flag){
+        this.suitBig.node.active = flag;
+        this.suitSmall.node.active = flag;
     },
 
-    setEnabled(flag){
-        this.node.enabled = flag;
+    setVisible(flag){
+        this.node.active = flag;
     },
     
     setCardVal(val){
@@ -35,11 +35,11 @@ cc.Class({
             return;
         }
         if(val == 74 || val == 75){
-            this.setSuitEnabled(false);
+            this.setSuitEnabsetSuitVisibleled(false);
             this.num.getComponent(cc.Sprite).spriteFrame = cardsAtlas.getSpriteFrame(val + "");
             return;
         }
-        this.setSuitEnabled(true);
+        this.setSuitVisible(true);
         let v = val%20;
         let suit = parseInt(val / 20);
         this.num.getComponent(cc.Sprite).spriteFrame = cardsAtlas.getSpriteFrame(v + "");

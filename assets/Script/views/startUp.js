@@ -37,7 +37,7 @@ cc.Class({
     },
 
     start () {
-        cc.director.loadScene("main");
+       cc.director.loadScene("main");
     },
 
     // update (dt) {},

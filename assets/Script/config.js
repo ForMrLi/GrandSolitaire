@@ -15,5 +15,5 @@ window.GS_GAME_ID = 102;
 
 const gs = {};
 window.gs = gs;
-
+let user = require("user");
 window.user = new user();

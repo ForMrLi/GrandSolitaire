@@ -17,4 +17,4 @@ let routes = {
 };
 // _.extend(routes, window.routes);
 
-window.niuniu.routes = routes;
+// window.niuniu.routes = routes;
